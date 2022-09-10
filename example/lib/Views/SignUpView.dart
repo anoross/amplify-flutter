@@ -130,8 +130,28 @@ class _SignUpViewState extends State<SignUpView> {
                       ),
                     ),
                     ElevatedButton(
+                      style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.all<
+                              Color>(
+                            const Color.fromRGBO(
+                                109, 44, 237, 1),
+                          ),
+                          shape: MaterialStateProperty.all<
+                              RoundedRectangleBorder>(
+                              const RoundedRectangleBorder(
+                                borderRadius: BorderRadius.all(
+                                    Radius.circular(6.0)),
+                              ))),
                       onPressed: _signUp,
-                      child: const Text('Sign Up'),
+                      child: const Text('Sign Up', textAlign: TextAlign.center, style: TextStyle(
+                          color: Color.fromRGBO(255, 255, 255, 1),
+                          fontFamily: 'Inter',
+                          fontSize: 14,
+                          letterSpacing: 0.20000000298023224,
+                          fontWeight: FontWeight.normal,
+                          height: 1.7142857142857142
+                      ),),
                     ),
                   ]),
                 ),
@@ -146,8 +166,28 @@ class _SignUpViewState extends State<SignUpView> {
                             labelText: 'Confirmation Code *',
                           )),
                       ElevatedButton(
+                        style: ButtonStyle(
+                            backgroundColor:
+                            MaterialStateProperty.all<
+                                Color>(
+                              const Color.fromRGBO(
+                                  109, 44, 237, 1),
+                            ),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
+                                const RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.all(
+                                      Radius.circular(6.0)),
+                                ))),
                         onPressed: _confirmSignUp,
-                        child: const Text('Confirm Sign Up'),
+                        child: const Text('Confirm Sign Up', textAlign: TextAlign.center, style: TextStyle(
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                            fontFamily: 'Inter',
+                            fontSize: 14,
+                            letterSpacing: 0.20000000298023224,
+                            fontWeight: FontWeight.normal,
+                            height: 1.7142857142857142
+                        ),),
                       ),
                     ])),
                 const Padding(padding: EdgeInsets.all(10.0)),
